@@ -1,0 +1,110 @@
+@import url("fonts.css");
+
+@keyframes movimiento{
+    0%{transform: translate(0px);}
+    /* 50%{transform: translate(170px);}  */
+    100%{transform: translate(170px);} 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* HEADER */
+
+header{
+	width: 100%;
+    background:#fff;
+    position: fixed;
+    transform: scale(1,1);
+    transition-duration: .7s; 
+}
+
+.minimo{
+    /* height: 80px; */
+    transform: scale(.9,.9);
+    border-radius: 15px;
+    transition-duration: .7s; 
+}
+
+.contenedor{
+	width: 97%;
+    /* height: 80px; */
+    margin: 0px auto; 
+	display: flex;
+	flex-direction:row;
+	justify-content:space-between; 
+	align-items: center;
+    /* transform: scale(1,1);
+    transition-duration: .7s; */
+}
+
+
+.contenedor .logo{
+    display: flex;
+	align-items: center;
+}
+    
+.contenedor .logo img{
+    width: 20%;
+    margin-right: 10px; 
+    transform: scale(1,1);
+    transition-duration: .7s;
+}
+
+.contenedor .logo .pequeno{
+    transform: scale(.8,.8);
+    transition-duration: .7s;
+    margin-right: 10px; 
+}
+
+.contenedor .logo .texto{
+    font-family: 'Roboto-Bold', sans-serif;
+}
+
+.contenedor .logo .texto h1{font-size: 40px;}
+.contenedor .logo .texto h2{font-size: 30px;}
+
+.contenedor .logo .texto .derecha{
+    transform: translate(170px,-23px);
+    transition-duration: 1s;
+}
+
+
+.contenedor .logo .texto .abajo{
+    transform: translate(0,20px);
+    transition-duration: 2s;
+}
+
+.contenedor .logo .texto .regreso{
+    transform: translate(0,0px);
+    transition-duration: 1s;
+}
+
+.contenedor .logo .texto .back{
+    transform: translate(0,0px);
+    transition-duration: 2s;
+}
+
+.contenedor .menu a{
+    padding: 5px 7px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    color: black;
+}
+
+.contenedor .menu a:hover{
+    border-bottom: 5px solid rgb(12, 106, 230);
+}
+
+/* MAIN */
+
+.main .mercadoportada{
+    /* position: relative;
+    top: 100px; */
+    height: 350px;
+    background: url('../img/img1.jpg');
+    /* background-attachment:fixed; */
+}
