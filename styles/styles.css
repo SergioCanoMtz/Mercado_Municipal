@@ -1,11 +1,5 @@
 @import url("fonts.css");
 
-@keyframes movimiento{
-    0%{transform: translate(0px);}
-    /* 50%{transform: translate(170px);}  */
-    100%{transform: translate(170px);} 
-}
-
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +16,6 @@ header{
 }
 
 .minimo{
-    /* height: 80px; */
     transform: scale(.9,.9);
     border-radius: 15px;
     transition-duration: .7s; 
@@ -30,14 +23,11 @@ header{
 
 .contenedor{
 	width: 97%;
-    /* height: 80px; */
     margin: 0px auto; 
 	display: flex;
 	flex-direction:row;
 	justify-content:space-between; 
 	align-items: center;
-    /* transform: scale(1,1);
-    transition-duration: .7s; */
 }
 
 
@@ -51,6 +41,7 @@ header{
     margin-right: 10px; 
     transform: scale(1,1);
     transition-duration: .7s;
+    
 }
 
 .contenedor .logo .pequeno{
@@ -95,16 +86,14 @@ header{
     color: black;
 }
 
-.contenedor .menu a:hover{
-    border-bottom: 5px solid rgb(12, 106, 230);
-}
+.contenedor .menu a:hover{border-bottom: 5px solid rgb(12, 106, 230);}
 
 /* MAIN */
 
-.main .mercadoportada{
-    /* position: relative;
-    top: 100px; */
-    height: 350px;
-    background: url('../img/img1.jpg');
-    /* background-attachment:fixed; */
+.main .mercadoPortada{
+    background: url('../img/img1.jpg') rgba(0,0,0,0.9);
+    background-color: rgb(90,90,90);
+    background-blend-mode: soft-light;
+    background-attachment:fixed; 
+    height: 500px; 
 }
