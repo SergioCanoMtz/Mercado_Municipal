@@ -7,12 +7,17 @@
 }
 /* HEADER */
 
+/* body{
+    background: #000;
+} */
+
 header{
 	width: 100%;
     background:#fff;
     position: fixed;
     transform: scale(1,1);
     transition-duration: .7s; 
+    z-index: 10;
 }
 
 .minimo{
@@ -91,9 +96,32 @@ header{
 /* MAIN */
 
 .main .mercadoPortada{
-    background: url('../img/img1.jpg') rgba(0,0,0,0.9);
-    background-color: rgb(90,90,90);
+    background: url('../img/img1.jpg');
+    background-color: rgba(0, 0, 0, 0.322);
     background-blend-mode: soft-light;
     background-attachment:fixed; 
     height: 500px; 
+    text-align: center;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main img{
+    position: absolute;
+    top: 314px;
+    /* bottom: 2px; */
+    z-index: 9;
+    
+}
+
+.main .mercadoPortada .introduccion{
+    display: flex;
+    text-align: center;   
+    justify-content: center;
+    align-items: center;
+}
+
+.main .mercadoPortada .introduccion .titulo{
+    
 }
