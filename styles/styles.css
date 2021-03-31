@@ -1,15 +1,21 @@
 @import url("fonts.css");
 
+@keyframes scroll-down {
+    0% {opacity: 0;}
+    30% {opacity: 1;}
+    60% {opacity: 1;}
+    100% {
+        top: 90%;
+        opacity: 0;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 /* HEADER */
-
-/* body{
-    background: #000;
-} */
 
 header{
 	width: 100%;
@@ -22,6 +28,7 @@ header{
 
 .minimo{
     transform: scale(.9,.9);
+    background:rgba(255, 255, 255, 0.966);
     border-radius: 15px;
     transition-duration: .7s; 
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.425);
@@ -66,7 +73,6 @@ header{
     transition-duration: 1s;
 }
 
-
 .contenedor .logo .texto .abajo{
     transform: translate(0,20px);
     transition-duration: 2s;
@@ -108,34 +114,28 @@ header{
 	align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
- .main .mercadoPortada .descrip {
+.main .mercadoPortada .descrip {
     color: #fff; 
     width: 50%;
     margin-right: 40px;
     text-align: justify;
-    font-size: 1.5em; 
+    font-size: 1.6em; 
     font-family:'Roboto-Bold';
     text-shadow:10px 10px 10px rgb(0 0 0);
 }
 
-.otromas {
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.main .logoGrande{
+    width: 15%;
 }
-
+/* Main - estilos del scrolldown */
 .scroll-down {
     height: 50px;
     width: 30px;
     border: 2px solid rgb(255, 255, 255);
     position: absolute;
     left: 50%;
-    /* bottom: 200px; */
     top: 400px;
     border-radius: 50px;
     cursor: pointer;
@@ -155,41 +155,14 @@ header{
     border-top: transparent;
     border-left: transparent;
     animation: scroll-down 1s ease-in-out infinite;
-  }
-  .scroll-down::before {
-    top: 30%;
-    animation-delay: 0.3s;
-    
-    /* animation: scroll-down 1s ease-in-out infinite; */
-  }
-  
-  @keyframes scroll-down {
-    0% {
-      /* top:20%; */
-      opacity: 0;
-    }
-    30% {
-      opacity: 1;
-    }
-    60% {
-      opacity: 1;
-    }
-    100% {
-      top: 90%;
-      opacity: 0;
-    }
-  }
-
-/* .main .mercadoPortada .descrip .titulo{
-    font-size: 50px;
-    font-family:'Roboto-Bold';
 }
 
-.main .mercadoPortada .descrip .resumen{
-    font-size: 20px;
-    font-family:'Roboto-Bold';
-} */
+.scroll-down::before {
+    top: 30%;
+    animation-delay: 0.3s;
+}
 
+/* linea curveada blanca */
 .main .blanco{
     position: absolute;
     top: 375px;
@@ -197,3 +170,35 @@ header{
     width: 100%;
 }
  
+/* estilos de la segunda seccion */
+
+.segundaSeccion {
+    height: 400px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px auto;
+}
+
+.segundaSeccion  img{
+    width: 35%;
+    border-radius: 13px;
+}
+
+.segundaSeccion .contenedorInfo{
+    margin-left: 2%;
+    width: 65%;
+}
+
+.segundaSeccion .contenedorInfo .titulo1{
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: right;
+}
+
+.segundaSeccion .contenedorInfo .descripcionTitulo{
+    font-size: 25px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
