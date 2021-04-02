@@ -24,6 +24,7 @@ header{
     transform: scale(1,1);
     transition-duration: .7s; 
     z-index: 10;
+    
 }
 
 .minimo{
@@ -38,7 +39,6 @@ header{
 	width: 97%;
     margin: 0px auto; 
 	display: flex;
-	flex-direction:row;
 	justify-content:space-between; 
 	align-items: center;
 }
@@ -98,8 +98,8 @@ header{
 }
 
 .contenedor .menu a:hover{
-    color: rgb(14, 65, 133);
-    border-bottom: 3px solid rgb(12, 106, 230);
+    color: #0B3253;
+    border-bottom: 3px solid #0c3455;
 }
 
 /* ---------------MAIN------------ */
@@ -204,4 +204,104 @@ header{
     font-size: 25px;
     text-align: justify;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.main .terceraSeccion{
+    background: url('../img/secciontres-BG.png');
+    height: 635px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 9;
+}
+
+.main .ultimaSeccion{
+    background:rgb(255, 255, 255);
+    height: 400px;
+    z-index: 7;
+}
+
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 50px;
+    background: #0B3253;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .derechos{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+}
+
+@media screen and (max-width:1180px){
+    .main .blanco {
+        /* position: absolute; */
+        top: 400px;
+        /* z-index: 9;
+        width: 100%; */
+    }
+
+    .main .mercadoPortada .descrip,
+    .segundaSeccion .contenedorInfo .titulo1 {
+        font-size: 1em;
+    }
+
+    .segundaSeccion .contenedorInfo .descripcionTitulo {
+        font-size: 15px;
+    }
+}
+
+/* Responsive (FALTA MUCHOOOOO!!!!!) */
+
+@media screen and (max-width:990px){
+    /* .contenedor .logo .texto {
+        display: none;
+    } */
+}
+
+@media screen and (max-width:950px){
+    .main .blanco {
+        top: 415px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .main .blanco {
+        top: 430px;
+    }
+}
+
+@media screen and (max-width:675px){
+    .main .blanco {
+        top: 445px;
+    }
+    .contenedor .logo{
+        display: none;
+    }
+
+    header .contenedor .menu{
+        margin: 10 auto;
+        
+    }
+
+    header .contenedor .menu a{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:520px){
+    .main .blanco {
+        top: 460px;
+    }
+}
+
+@media screen and (max-width:380px){
+    .main .blanco {
+        top: 470px;
+    }
 }
