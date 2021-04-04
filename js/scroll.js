@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
+    var ver = document.getElementById('ver');
+    var opc = document.getElementById('opc');
+
     window.onscroll = ()=> reducciondeHeader();
 
     function reducciondeHeader() {       
@@ -14,4 +17,8 @@ document.addEventListener('DOMContentLoaded', function(){
             document.getElementById("minimo").className = "";
         }
     }
+    
+    ver.addEventListener('click', () => {
+        opc.classList.toggle('show');
+    })
 });
