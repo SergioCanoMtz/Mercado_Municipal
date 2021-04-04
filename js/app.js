@@ -3,17 +3,14 @@ document.addEventListener('DOMContentLoaded', function(){
     var evento = document.getElementById('evento');
     var ver = document.getElementById('ver');
     
-    window.onscroll = ()=>{
-        reducciondeHeader();
-    };
+    window.onscroll = ()=> reducciondeHeader();
 
     evento.addEventListener('click', function(){     
         /* document.body.scrollTop = 400; */
         document.documentElement.scrollTop = 500; 
     })
 
-    function reducciondeHeader() {
-       
+    function reducciondeHeader() {       
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             document.getElementById("derecha").className = "derecha";
             document.getElementById("abajo").className = "abajo";
