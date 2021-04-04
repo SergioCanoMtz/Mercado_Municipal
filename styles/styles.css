@@ -50,7 +50,7 @@ header{
     
 .contenedor .logo img{
     width: 20%;
-    margin-right: 10px; 
+    /* margin-right: 10px;  */
     transform: scale(1,1);
     transition-duration: .7s;
 }
@@ -58,7 +58,6 @@ header{
 .contenedor .logo .pequeno{
     transform: scale(.8,.8);
     transition-duration: .7s;
-    margin-right: 10px; 
 }
 
 .contenedor .logo .texto{
@@ -97,9 +96,22 @@ header{
 
 }
 
-.contenedor .menu a:hover{
-    color: #0B3253;
-    border-bottom: 3px solid #0c3455;
+.contenedor .menu a:hover, 
+.contenedor .menu a.active{
+    background-color: #1e5b8d;
+    color: #fff;
+    border-radius: 3px;
+    transition: .8s;
+}
+
+header .contenedor .bar{
+    color: black;
+    width: 25px;
+    height: 25px;
+    font-size: 28px;
+    margin-right: 20px;
+    display: none;
+    z-index:20;
 }
 
 /* ---------------MAIN------------ */
@@ -132,7 +144,7 @@ header{
     width: 15%;
 }
 /* Main - estilos del scrolldown */
-.scroll-down {
+.main .mercadoPortada a .scroll-down {
     height: 50px;
     width: 30px;
     border: 2px solid rgb(255, 255, 255);
@@ -219,8 +231,6 @@ header{
     height: 400px;
     z-index: 7;
 }
-
-
 /* footer */
 
 footer {
@@ -238,12 +248,16 @@ footer .derechos{
     font-size: 17px;
 }
 
+
+/* Responsive (FALTA MUCHOOOOO!!!!!) */
+
 @media screen and (max-width:1180px){
+    header .contenedor .logo .texto{
+        transform: scale(0.7);
+    }
+
     .main .blanco {
-        /* position: absolute; */
         top: 400px;
-        /* z-index: 9;
-        width: 100%; */
     }
 
     .main .mercadoPortada .descrip,
@@ -254,14 +268,52 @@ footer .derechos{
     .segundaSeccion .contenedorInfo .descripcionTitulo {
         font-size: 15px;
     }
+
+    .main .mercadoPortada a .scroll-down {   
+        z-index: 0;
+    }
 }
 
-/* Responsive (FALTA MUCHOOOOO!!!!!) */
+
 
 @media screen and (max-width:990px){
-    /* .contenedor .logo .texto {
-        display: none;
-    } */
+    header .contenedor .bar{
+        display: block;
+
+    }
+    header .contenedor .menu {  
+        display: none;  
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        z-index: 12;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.425);
+    }
+
+    header .contenedor .menu a{
+        display: block;
+        width: 70%;
+        margin: 10px auto;
+    }
+
+    header .contenedor .show{
+        display: block;
+    }
+
+    .minimo{
+        border-radius: 15px 15px 0 0;
+        background:#fff;
+    }
+
+    .main .mercadoPortada a .scroll-down {   
+        z-index: 0;
+    }
+
+    
 }
 
 @media screen and (max-width:950px){
@@ -280,9 +332,6 @@ footer .derechos{
     .main .blanco {
         top: 445px;
     }
-    .contenedor .logo{
-        display: none;
-    }
 
     header .contenedor .menu{
         margin: 10 auto;
@@ -300,8 +349,22 @@ footer .derechos{
     }
 }
 
+@media screen and (max-width:370px){
+    .contenedor .logo .texto .derecha{
+        transform: translate(45px,0);
+        transition-duration: 1s;
+    }
+    
+    .contenedor .logo .texto .abajo{
+        transform: translate(30px,0);
+        transition-duration: 2s;
+    }
+}
+
+
 @media screen and (max-width:380px){
     .main .blanco {
         top: 470px;
     }
 }
+
