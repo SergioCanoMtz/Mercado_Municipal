@@ -1,15 +1,13 @@
 @import url("fonts.css");
 @import url('universal.css');
 @import url('header.css');
-@import url('footer.css');
+/* @import url('footer.css'); */
 
 @media screen and (max-width:1180px){
     header .contenedor .logo .texto{
         transform: scale(0.7);
     }
 }
-
-
 
 @media screen and (max-width:990px){
     header .contenedor .bar{
@@ -64,4 +62,87 @@
         transform: translate(30px,0);
         transition-duration: 2s;
     }
+}
+
+section .encabezado{
+    background: #0B3253;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0 150px;
+    position: relative;
+    bottom: -85px;
+}
+
+section .encabezado .cart{
+    font-size: 200px;
+    color: #fff;
+    
+}
+
+section .encabezado .text{
+    font-size: 35px;
+    font-family: "Roboto-Regular";
+    color: #fff;
+    padding: 0 50px;
+    
+}
+
+section .principal{
+    background: #fff;
+    /* height: 880px; */
+    width: 100%;
+    position: relative;
+    bottom: -85px;  
+}
+
+section .principal .contenedor{
+    display: flex;
+    /* height: 876px; */
+    flex-direction: column;
+    margin: 15px auto;
+}
+
+section .principal .contenedor .contenido1,
+section .principal .contenedor .contenido2{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .principal .contenedor .contenido1 .image,
+section .principal .contenedor .contenido2 .image{
+    width: 220px;
+    border-radius: 5px;
+}
+
+section .principal .contenedor .contenido1 p,
+section .principal .contenedor .contenido2 p{
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0 20px;
+    text-align: justify;
+
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    background: #0B3253;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -85px;
+}
+
+footer .derechos{
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
 }
