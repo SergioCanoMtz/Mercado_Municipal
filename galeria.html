@@ -28,67 +28,141 @@
             <div class="bar" > 
                 <i id="ver" class="bas fas fa-bars" id=""></i>                       
             </div>
-        </div>
-        
+        </div>    
     </header>
 
     <section>
         <div class="container">
-            <div class="item">
-                <img src="img/6.jpg" alt="" class="item-img">
-                <div class="item-text">
-                    <h3>Imagen 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                </div>
+            <div class="item" >
+                <a href="#" onclick='openModal(0)' class="tagA">
+                    <img src="img/temp.png" class="item-img">
+                    <div class="item-text">
+                        <h3>Imagen 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                    <div class="btn">
+                        <button class="vermas">Ver mas</button>
+                    </div>  
+                </a>
             </div>
             
             <div class="item">
-                <img src="img/7.jpg" alt="" class="item-img">
-                <div class="item-text">
-                    <h3>Imagen 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                </div>
+                <a href="#" onclick='openModal(1)' class="tagA">
+                    <img src="img/4.jpg" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Imagen 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                    <div class="btn">
+                        <button class="vermas">Ver mas</button>
+                    </div> 
+                </a>
             </div>
 
             <div class="item">
-                <img src="img/8.jpg" alt="" class="item-img">
-                <div class="item-text">
-                    <h3>Imagen 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                </div>
+                <a href="#" onclick='openModal(2)' class="tagA">
+                    <img src="img/6t.jpg" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Imagen 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                    <div class="btn">
+                        <button class="vermas">Ver mas</button>
+                    </div> 
+                </a>
             </div>
 
             <div class="item">
-                <img src="img/9.jpg" alt="" class="item-img">
-                <div class="item-text">
-                    <h3>Imagen 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                </div>
+                <a href="#" onclick='openModal(3)' class="tagA">
+                    <img src="img/7.jpg" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Imagen 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                    <div class="btn">
+                        <button class="vermas">Ver mas</button>
+                    </div> 
+                </a>      
             </div>
 
             <div class="item">
-                <img src="img/13.jpg" alt="" class="item-img">
-                <div class="item-text">
-                    <h3>Imagen 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                </div>
+                <a href="#" onclick='openModal(4)' class="tagA">
+                    <img src="img/temp1.jpg" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Imagen 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                    <div class="btn">
+                        <button class="vermas">Ver mas</button>
+                    </div> 
+                </a>
             </div>
 
             <div class="item">
-                <img src="img/14.jpg" alt="" class="item-img">
-                <div class="item-text">
-                    <h3>Imagen 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                </div>
+                <a href="#" onclick='openModal(5)' class="tagA">
+                    <img src="img/14t.jpg" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Imagen 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                    <div class="btn">
+                        <button class="vermas">Ver mas</button>
+                    </div> 
+                </a>   
             </div>
 
             <div class="item">
-                <img src="img/15.jpg" alt="" class="item-img">
-                <div class="item-text">
-                    <h3>Imagen 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                </div>
+                <a href="#" onclick='openModal(6)' class="tagA">
+                    <img src="img/15.jpg" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Imagen 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                    <div class="btn">
+                        <button class="vermas">Ver mas</button>
+                    </div> 
+                </a>     
             </div>
+
+            <div class="item">
+                <a href="#" onclick='openModal(7)' class="tagA">
+                    <img src="img/8.jpg" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Imagen 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                </a>
+                <div class="btn">
+                    <button class="vermas">Ver mas</button>
+                </div> 
+            </div>
+
+            <div class="item">
+                <a href="#" onclick='openModal(8)' class="tagA">
+                    <img src="img/9.jpg" alt="" class="item-img">
+                    <div class="item-text">
+                        <h3>Imagen 1</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                </a>  
+                <div class="btn">
+                    <button class="vermas">Ver mas</button>
+                </div> 
+            </div>
+
+            <section class="modal" id='modal'>
+                <div class="todo">
+                    <a href="#" class="cerrar" onclick="closeModal();"><i class="fa fa-times"></i></a>
+                    <div class="pop">
+                        <img id="image">
+                        <div class="infor">
+                            <h2 id="product"></h2>
+                            <h4 id="antes"></h4>
+                            <h3 id="ahora"></h3>	
+                        </div>
+                    </div>		
+                </div>
+            </section>
     </section>
 
 
