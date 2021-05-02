@@ -1,9 +1,8 @@
 @import url("fonts.css");
 @import url('universal.css');
-/* @import url('header.css'); */
 
 header{
-	  width: 100%;
+	width: 100%;
     background:#fff;
     position: fixed;
     transform: scale(1,1);
@@ -111,7 +110,6 @@ header .contenedor .bar{
     grid-gap: 30px;
     position: relative;
     bottom: -100px;
-    
 }
 
 .item{
@@ -121,7 +119,6 @@ header .contenedor .bar{
     transition: all 300ms;
     position: relative;
 }
-  
   
 .item::after {
     content: "";
