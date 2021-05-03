@@ -21,7 +21,7 @@ header{
 
 .contenedor{
 	width: 97%;
-  margin: 0px auto; 
+    margin: 0px auto; 
 	display: flex;
 	justify-content:space-between; 
 	align-items: center;
@@ -167,7 +167,7 @@ header .contenedor .bar{
   margin: 10px auto;
   margin-top: 0;
   font-family: 'Poppins', sans-serif;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .modal{
