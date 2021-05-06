@@ -7,8 +7,7 @@ header{
     position: fixed;
     transform: scale(1,1);
     transition-duration: .7s; 
-    z-index: 10;
-    
+    z-index: 10; 
 }
 
 .minimo{
@@ -144,6 +143,7 @@ header .contenedor .bar{
 
 .item-text{
   padding: 1em;
+  font-family: "Roboto-Regular";
 }
   
   
@@ -186,7 +186,10 @@ header .contenedor .bar{
 	border-radius: 4px;
 	margin: 150px auto;
 	padding: 20px;
-	width: 800px;
+	width: 900px;
+    position: relative;
+    bottom: 55px;
+    z-index: 21;
 }
 
 .modal .todo .pop{
@@ -210,62 +213,25 @@ header .contenedor .bar{
 }
 
 .modal .todo .pop img{
-	width: 65%;
+	width: 70%;
 	border-radius: 4px;
 }
 
 .modal .todo .pop .infor{
-	margin: 0px auto;
-	text-align: left;
-}
-
-.modal .todo .pop .infor h1{
-	font-size: 30px;
-	margin-bottom: 20px;
-	font-family: "Bold-700"
+	margin: 0 15px;
+    font-family: "Poppins";
 }
 
 .modal .todo .pop .infor h2{
 	font-size: 40px;
 	margin-bottom: 20px;
-	font-family: "Bold-700"
 }
 
 .modal .todo .pop .infor h4{
 	font-size: 20px;
 	margin-bottom: 10px;
-	font-family: "Light-300"
 }
 
-.modal .todo .pop .infor h3{
-	font-size: 30px;
-	margin-bottom: 10px;
-	font-family: "Light-300"
-}
-
-.modal .todo .pop .infor p{
-	font-size: 20px;
-	margin-bottom: 10px;
-	font-family: "Regular-400"
-}
-
-.modal .todo .pop .infor .compra{
-	padding: 0 20px;
-	height: 40px;
-	line-height: 40px;
-	border: none;
-	color: #fff;
-	background: #5E7DE3;
-	border-radius: 3px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 16px;
-	cursor: pointer;
-	transition: .3s ease all;
-}
-
-.modal .todo .pop .infor .compra:hover{
-	background: rgba(94,125,227, .9);
-}
 
 footer {
     width: 100%;
@@ -277,6 +243,11 @@ footer {
     justify-content: center;
     position: relative;
     bottom: -85px;
+    z-index: 20;
+}
+
+.pie-hidden{
+    display: none;
 }
 
 footer .derechos{

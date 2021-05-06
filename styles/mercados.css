@@ -55,6 +55,11 @@
    font-family: "Roboto-Regular";
 }
 
+.ubicacion .solo{
+    display: flex;
+    justify-content: center;
+}
+
 .mapa{
     position: relative;
     bottom: -85px;

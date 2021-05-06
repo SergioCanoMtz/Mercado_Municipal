@@ -121,13 +121,18 @@ section .principal .contenedor .contenido2 .image{
     border-radius: 5px;
 }
 
-section .principal .contenedor .contenido1 p,
-section .principal .contenedor .contenido2 p{
+section .principal .contenedor .contenido1 .text p,
+section .principal .contenedor .contenido2 .text p{
     font-size: 20px;
     font-family:Arial, Helvetica, sans-serif;
     margin: 0 20px;
     text-align: justify;
+}
 
+section .principal .contenedor .contenido1 h2,
+section .principal .contenedor .contenido2 h2{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 5px 20px;
 }
 
 footer {
