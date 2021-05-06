@@ -12,7 +12,7 @@
         opacity: 0;
     }
 }
-
+ 
 /* ---------------MAIN------------ */
 
 .main .mercadoPortada{
@@ -34,14 +34,14 @@
     width: 50%;
     margin-right: 40px;
     text-align: justify;
-    font-size: 1.7em; 
     font-family:'Roboto-Bold';
     text-shadow:10px 10px 10px rgb(0 0 0);
 }
 
-.main .logoGrande{
-    width: 15%;
-}
+.main .mercadoPortada .descrip .titulo{ font-size: 70px; }
+.main .mercadoPortada .descrip .resumen{font-size: 30px;}
+.main .logoGrande{ width: 15%; }
+
 /* Main - estilos del scrolldown */
 .main .mercadoPortada a .scroll-down {
     height: 50px;
@@ -100,21 +100,24 @@
 }
 
 .segundaSeccion .contenedorInfo{
-    margin-left: 2%;
-    width: 65%;
+
+    width: 60%;
     padding: 10px;
+    margin: 0 50px;
 }
 
-.segundaSeccion .contenedorInfo .titulo1{
-    font-size: 1.5em;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: right;
+.segundaSeccion .contenedorInfo .titulo1,
+.terceraSeccion .contenedorInfo .titulo1{
+    font-size: 3.5em;
+    font-family: "Roboto-Bold";
+    text-align: center;
 }
 
-.segundaSeccion .contenedorInfo .descripcionTitulo{
+.segundaSeccion .contenedorInfo .descripcionTitulo,
+.terceraSeccion .contenedorInfo .descripcionTitulo{
     font-size: 25px;
-    text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-family: "Roboto-Regular";
 }
 
 .main .terceraSeccion{
@@ -123,6 +126,18 @@
     background-repeat: no-repeat;
     background-size: 100%;
     z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px auto;
+    padding: 0 100px;
+    color: #fff;
+}
+
+.main .terceraSeccion img{
+    width: 40%;
+    position: relative;
+    bottom: 95px;
 }
 
 .main .ultimaSeccion{
