@@ -1,7 +1,6 @@
 @import url("fonts.css");
 @import url('universal.css');
 @import url('header.css');
-/* @import url('footer.css'); */
 
 @media screen and (max-width:1180px){
     header .contenedor .logo .texto{
@@ -93,7 +92,6 @@ section .encabezado .text{
 
 section .principal{
     background: #fff;
-    /* height: 880px; */
     width: 100%;
     position: relative;
     bottom: -85px;  
@@ -101,7 +99,6 @@ section .principal{
 
 section .principal .contenedor{
     display: flex;
-    /* height: 876px; */
     flex-direction: column;
     margin: 15px auto;
 }
@@ -117,7 +114,7 @@ section .principal .contenedor .contenido2{
 
 section .principal .contenedor .contenido1 .image,
 section .principal .contenedor .contenido2 .image{
-    width: 220px;
+    width: 300px;
     border-radius: 5px;
 }
 
