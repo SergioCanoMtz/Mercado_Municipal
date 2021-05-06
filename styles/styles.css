@@ -100,21 +100,22 @@
 }
 
 .segundaSeccion .contenedorInfo{
-
     width: 60%;
     padding: 10px;
     margin: 0 50px;
 }
 
 .segundaSeccion .contenedorInfo .titulo1,
-.terceraSeccion .contenedorInfo .titulo1{
+.terceraSeccion .contenedorInfo .titulo1,
+.ultimaSeccion .contenedorInfo .titulo1{
     font-size: 3.5em;
     font-family: "Roboto-Bold";
     text-align: center;
 }
 
 .segundaSeccion .contenedorInfo .descripcionTitulo,
-.terceraSeccion .contenedorInfo .descripcionTitulo{
+.terceraSeccion .contenedorInfo .descripcionTitulo,
+.ultimaSeccion .contenedorInfo .descripcionTitulo{
     font-size: 25px;
     text-align: center;
     font-family: "Roboto-Regular";
@@ -144,6 +145,19 @@
     background:rgb(255, 255, 255);
     height: 400px;
     z-index: 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px auto;
+    padding: 0 100px;
+    color: #000;
+}
+
+.main .ultimaSeccion img{
+    width: 30%;
+    position: relative;
+    bottom: 95px;
+    margin-left: 85px;
 }
 
 /* Responsive (FALTA MUCHOOOOO!!!!!) */
