@@ -145,6 +145,10 @@ header .contenedor .bar{
   padding: 1em;
   font-family: "Roboto-Regular";
 }
+
+.item-text p{
+    display: none;
+}
   
   
 .item-img{
