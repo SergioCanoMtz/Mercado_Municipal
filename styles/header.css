@@ -7,7 +7,6 @@ header{
     transform: scale(1,1);
     transition-duration: .7s; 
     z-index: 10;
-    
 }
 
 .minimo{
@@ -33,7 +32,6 @@ header{
     
 .contenedor .logo img{
     width: 20%;
-    /* margin-right: 10px;  */
     transform: scale(1,1);
     transition-duration: .7s;
 }
