@@ -223,9 +223,7 @@
 
     .main .mercadoPortada a .scroll-down {   
         z-index: 0;
-    }
-
-    
+    } 
 }
 
 @media screen and (max-width:950px){
